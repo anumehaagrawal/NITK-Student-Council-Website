@@ -24,9 +24,10 @@ Install all dependencies:
     pip install -r requirements.txt
 
 Run migrations:
-
-    python manage.py migrate
-
+```
+    python manage.py makemigrations website
+    python manage.py runserver
+```
 ### Detailed instructions
 
 Take a look at the docs for more information.
