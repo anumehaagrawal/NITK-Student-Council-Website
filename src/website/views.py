@@ -23,7 +23,22 @@ class SenatePage(generic.TemplateView):
     template_name = "senate.html"
 
 class FAQ(generic.TemplateView):
-    template_name="faq.html"
+    template_name = "faq.html"
+
+class SMPHome(generic.TemplateView):
+    template_name = "smp/index.html"
+
+class SMPCouncils(generic.TemplateView):
+    template_name = "smp/councils.html"
+
+class SMPFests(generic.TemplateView):
+    template_name = "smp/fests.html"
+
+class SMPClubs(generic.TemplateView):
+    template_name = "smp/clubs.html"
+
+class SMPSports(generic.TemplateView):
+    template_name = "smp/sports.html"
 
 def date_handler(obj):
     # To handle the date format while JSON conversion

@@ -23,4 +23,9 @@ urlpatterns = [
     url(r'^resources/',views.resources,name='resources'),
     url(r'^letters/',views.letters,name='letters'),
     url(r'^suggest/',views.suggest,name='suggestions'),
+    url(r'^smp/$', views.SMPHome.as_view(), name='smpHome'),
+    url(r'^smp/clubs', views.SMPClubs.as_view(), name='smpClubs'),
+    url(r'^smp/councils', views.SMPCouncils.as_view(), name='smpCouncils'),
+    url(r'^smp/fests', views.SMPFests.as_view(), name='smpFests'),
+    url(r'^smp/sports', views.SMPSports.as_view(), name='smpSports'),
 ]
